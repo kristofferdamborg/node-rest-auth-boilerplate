@@ -23,7 +23,7 @@ const app = express()
 // Allows Cross-Origin Resource Sharing
 app.use(cors())
 
-// Console los incoming requests
+// Console logs incoming requests
 app.use(morgan('combined'))
 
 // Parses incoming request bodies to JSON
