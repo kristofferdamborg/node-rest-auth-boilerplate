@@ -4,7 +4,7 @@
   "description": "A boilerplate project for a Node REST API with JWT authentication",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/nodemon/bin/nodemon.js app.js --exec"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,18 @@
   "bugs": {
     "url": "https://github.com/kristofferdamborg/node-rest-auth-boilerplate/issues"
   },
-  "homepage": "https://github.com/kristofferdamborg/node-rest-auth-boilerplate#readme"
+  "homepage": "https://github.com/kristofferdamborg/node-rest-auth-boilerplate#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "joi": "^13.3.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.1.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
 }
